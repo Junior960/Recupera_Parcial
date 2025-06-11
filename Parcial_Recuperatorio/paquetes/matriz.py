@@ -1,3 +1,9 @@
+
+
+areas = ["Rosario","Cordoba","Salta","Bahia Blanca"]
+aparatos_tegnologico = ["Arduino UNO", "Sensor de temperatura","Cable USB","Display LCD","Protoboard"]
+
+
 def inicialisaar_matriz(filas:int, columnas:int, valor:any = 0)-> list :
     matriz = []
     for i in range(filas):
@@ -9,7 +15,7 @@ def inicialisaar_matriz(filas:int, columnas:int, valor:any = 0)-> list :
 def cargar_matriz_secuencial(matriz_secuencial:list) -> list:
     for i in range(len(matriz_secuencial)):
         for j in range(len(matriz_secuencial[i])):
-            matriz_secuencial[i][j] = int(input(f"ingrese un numero en la fila {i} columan {j}: "))
+            matriz_secuencial[i][j] = int(input(f"ingrese un numero en la fila {areas[i]} columan {aparatos_tegnologico[j]}: "))
 
     return matriz_secuencial
 
