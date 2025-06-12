@@ -12,6 +12,7 @@ def inicialisaar_matriz(filas:int, columnas:int, valor:any = 0)-> list :
 
     return matriz 
 
+
 def cargar_matriz_secuencial(matriz_secuencial:list) -> list:
     for i in range(len(matriz_secuencial)):
         for j in range(len(matriz_secuencial[i])):
@@ -19,28 +20,28 @@ def cargar_matriz_secuencial(matriz_secuencial:list) -> list:
 
     return matriz_secuencial
 
-def ordenar_burbujeo(lista:list):
+# def ordenar_burbujeo(lista:list):
 
-    numero = len(lista)
+#     numero = len(lista)
     
-    for i in range(numero):
+#     for i in range(numero):
         
-        bandera_intercambio = False
+#         bandera_intercambio = False
 
-        for j in range(0, numero - i - 1):
+#         for j in range(0, numero - i - 1):
 
-            if lista [j] > lista[j + 1]:
-                bandera_intercambio = True
-                menor = lista[j + 1]
+#             if lista [j] > lista[j + 1]:
+#                 bandera_intercambio = True
+#                 menor = lista[j + 1]
 
-                lista[j + 1] = lista[j]
-                lista[j] = menor
-
-
-        if bandera_intercambio == False:
-            break
+#                 lista[j + 1] = lista[j]
+#                 lista[j] = menor
 
 
-    return lista
+#         if bandera_intercambio == False:
+#             break
+
+
+#     return lista
             
 
